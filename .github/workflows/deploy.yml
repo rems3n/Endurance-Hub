@@ -1,0 +1,53 @@
+name: Deploy Landing Page to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'landing-page-EH/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        working-directory: landing-page-EH
+        run: npm ci
+      - name: Run unit tests
+        working-directory: landing-page-EH
+        run: npm test
+      - name: Install Playwright browsers
+        working-directory: landing-page-EH
+        run: npx playwright install --with-deps chromium
+      - name: Run E2E tests
+        working-directory: landing-page-EH
+        run: npm run test:e2e
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: landing-page-EH
+      - id: deployment
+        uses: actions/deploy-pages@v4

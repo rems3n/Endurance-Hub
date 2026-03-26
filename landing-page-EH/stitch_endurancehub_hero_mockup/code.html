@@ -1,0 +1,422 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ELITE ENDURANCE | Performance Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#2e3d4e",
+                        "surface-variant": "#d9e4ea",
+                        "surface-container-high": "#e1e9ee",
+                        "on-primary-fixed-variant": "#515c70",
+                        "surface-dim": "#cfdce3",
+                        "error-dim": "#4e0309",
+                        "on-tertiary": "#f7f9ff",
+                        "on-secondary-fixed": "#314055",
+                        "secondary-fixed": "#d3e4fe",
+                        "secondary-fixed-dim": "#c5d6f0",
+                        "on-error-container": "#752121",
+                        "surface-container": "#e8eff3",
+                        "surface-container-highest": "#d9e4ea",
+                        "inverse-on-surface": "#9a9d9f",
+                        "inverse-primary": "#dae6fe",
+                        "on-secondary": "#f7f9ff",
+                        "primary-container": "#d8e3fb",
+                        "background": "#f7f9fb",
+                        "on-surface-variant": "#566166",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#475266",
+                        "on-secondary-fixed-variant": "#4d5d73",
+                        "on-background": "#2a3439",
+                        "surface-tint": "#545f73",
+                        "secondary-container": "#d3e4fe",
+                        "surface-container-low": "#f0f4f7",
+                        "error": "#9f403d",
+                        "surface": "#f7f9fb",
+                        "tertiary-dim": "#465467",
+                        "secondary": "#506076",
+                        "surface-bright": "#f7f9fb",
+                        "on-surface": "#2a3439",
+                        "error-container": "#fe8983",
+                        "secondary-dim": "#44546a",
+                        "primary": "#545f73",
+                        "on-primary-fixed": "#354053",
+                        "primary-fixed-dim": "#cad5ed",
+                        "primary-fixed": "#d8e3fb",
+                        "tertiary-fixed-dim": "#c1d0e6",
+                        "outline-variant": "#a9b4b9",
+                        "on-primary": "#f6f7ff",
+                        "on-secondary-container": "#435368",
+                        "on-tertiary-container": "#414f62",
+                        "outline": "#717c82",
+                        "tertiary-fixed": "#cfdef5",
+                        "primary-dim": "#485367",
+                        "inverse-surface": "#0b0f10",
+                        "on-tertiary-fixed-variant": "#4a596c",
+                        "tertiary": "#526073",
+                        "tertiary-container": "#cfdef5",
+                        "on-error": "#fff7f6"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-slate-50 border-b border-slate-200/50">
+<div class="flex items-center gap-8">
+<span class="text-lg font-bold tracking-tighter text-slate-900" style="">ELITE ENDURANCE</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-900 font-semibold text-sm transition-colors" href="#" style="">Dashboard</a>
+<a class="text-slate-500 hover:text-slate-900 text-sm transition-colors" href="#" style="">Training</a>
+<a class="text-slate-500 hover:text-slate-900 text-sm transition-colors" href="#" style="">Build Plan</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm" style="">search</span>
+<input class="bg-surface-container-low border-none rounded-full pl-10 pr-4 py-1.5 text-xs w-64 focus:ring-1 focus:ring-primary" placeholder="Search..." type="text">
+</div>
+<button class="p-2 text-slate-600 hover:bg-slate-100 rounded-full transition-colors" style="">
+<span class="material-symbols-outlined" style="">notifications</span>
+</button>
+<div class="h-8 w-8 rounded-full bg-slate-200 overflow-hidden">
+<img alt="Athlete Profile" data-alt="Close-up portrait of a focused male endurance athlete with athletic gear in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5BRj_LzgGOoCq2ow_hbBLwSLQmvl_oAi2t1pI5enTthYPa1t9K9yRBfLOEaqHoEv5kw8k2abi7d35luM5vqI2SK4_htfLZh6UmFkAKhCbxYqT2fqowfCsck1d6w4fIB82JabS6FToDGrXLulY3bk2jJPIJDzof0VxqY6gxkANv0DkxBbcpZNuaE4V6agVy_ynR6GfTSQ215eyJCakT93q1s1DZQ1oePGwrb7eCKEX9J8FiKPgBktOeLHQGn-SwY0WUJNVN6Uxu05Z" class="" style="">
+</div>
+</div>
+</header>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full z-40 flex flex-col p-4 gap-2 bg-slate-100 border-r border-slate-200/50 w-64 pt-20 hidden lg:flex">
+<div class="px-4 mb-6">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-lg bg-primary flex items-center justify-center text-white font-bold" style="">MM</div>
+<div>
+<p class="text-sm font-bold text-slate-900" style="">Marcus Miller</p>
+<p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold" style="">Pro</p>
+</div>
+</div>
+</div>
+<div class="space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 bg-white text-slate-900 shadow-sm rounded-lg font-medium text-sm" href="#" style="">
+<span class="material-symbols-outlined text-xl" style="">grid_view</span>
+<span class="" style="">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200/50 hover:text-slate-900 rounded-lg transition-all text-sm" href="#" style="">
+<span class="material-symbols-outlined text-xl" style="">fitness_center</span>
+<span class="" style="">Training Calendar</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200/50 hover:text-slate-900 rounded-lg transition-all text-sm" href="#" style="">
+<span class="material-symbols-outlined text-xl" style="">insights</span>
+<span class="" style="">Analytics</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200/50 hover:text-slate-900 rounded-lg transition-all text-sm" href="#" style="">
+<span class="material-symbols-outlined text-xl" style="">self_improvement</span>
+<span class="" style="">Recovery</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200/50 hover:text-slate-900 rounded-lg transition-all text-sm" href="#" style="">
+<span class="material-symbols-outlined text-xl" style="">layers</span>
+<span class="" style="">Devices &amp; Integrations</span>
+</a>
+</div>
+<div class="mt-auto space-y-1">
+<button class="w-full flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-lg text-sm font-semibold mb-4 shadow-lg shadow-primary/10" style="">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">bolt</span>
+<span class="" style="">AI Coach</span>
+</button>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-500 hover:text-slate-900 text-sm" href="#" style="">
+<span class="material-symbols-outlined text-xl" style="">help_outline</span>
+<span class="" style="">Support</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-500 hover:text-slate-900 text-sm" href="#" style="">
+<span class="material-symbols-outlined text-xl" style="">logout</span>
+<span class="" style="">Logout</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Stage -->
+<main class="lg:ml-64 pt-16 min-h-screen">
+<div class="p-8 max-w-7xl mx-auto space-y-10">
+<!-- Header Section: Performance Hub -->
+<section class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-end">
+<div class="xl:col-span-5 space-y-4">
+<div class="flex items-center gap-3 text-xs font-bold text-primary tracking-widest uppercase">
+<span class="material-symbols-outlined text-sm" style="">event</span>
+<span class="" style="">Ironman Lake Placid - Week 7 of 24</span>
+</div>
+<h1 class="text-4xl font-extrabold text-slate-900 tracking-tight" style="">Performance Hub</h1>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[29%] transition-all duration-1000"></div>
+</div>
+</div>
+<div class="xl:col-span-7 grid grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-slate-100/50 shadow-sm flex flex-col justify-between h-32">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest" style="">Fitness</span>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-bold text-slate-900" style="">104</span>
+<span class="text-xs text-primary font-bold" style="">+2.4%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-slate-100/50 shadow-sm flex flex-col justify-between h-32">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest" style="">Readiness</span>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-bold text-slate-900" style="">88</span>
+<span class="text-xs text-slate-400 font-bold" style="">%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-slate-100/50 shadow-sm flex flex-col justify-between h-32">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest" style="">Performance Trend</span>
+<div class="flex items-end gap-1 h-12">
+<div class="w-2 bg-slate-200 h-[40%] rounded-t-sm"></div>
+<div class="w-2 bg-slate-200 h-[60%] rounded-t-sm"></div>
+<div class="w-2 bg-primary h-[85%] rounded-t-sm"></div>
+<div class="w-2 bg-primary h-[75%] rounded-t-sm"></div>
+<div class="w-2 bg-primary h-[95%] rounded-t-sm"></div>
+<div class="w-2 bg-primary h-[80%] rounded-t-sm"></div>
+<div class="w-2 bg-primary h-[90%] rounded-t-sm"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 14-Day Training Calendar -->
+<section class="space-y-6">
+<div class="flex justify-between items-center">
+<h2 class="text-lg font-bold text-slate-900" style="">Training Cycles</h2>
+<div class="flex gap-2">
+<div class="flex items-center gap-1.5 px-3 py-1 bg-surface-container rounded-full text-[10px] font-bold text-slate-500 uppercase" style="">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Complete
+                        </div>
+<div class="flex items-center gap-1.5 px-3 py-1 bg-surface-container rounded-full text-[10px] font-bold text-slate-500 uppercase" style="">
+<span class="w-2 h-2 rounded-full bg-slate-300"></span> Planned
+                        </div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+<!-- Past 7 Days (Success/Missed) -->
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<p class="text-[10px] font-bold text-slate-400 mb-1" style="">MON 12</p>
+<p class="text-sm font-bold text-slate-900 mb-3" style="">Swim</p>
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-[10px] ml-1 font-bold" style="">100%</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<p class="text-[10px] font-bold text-slate-400 mb-1" style="">TUE 13</p>
+<p class="text-sm font-bold text-slate-900 mb-3" style="">Bike</p>
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-[10px] ml-1 font-bold" style="">92%</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-error/50"></div>
+<p class="text-[10px] font-bold text-slate-400 mb-1 text-error" style="">WED 14</p>
+<p class="text-sm font-bold text-slate-900 mb-3" style="">Strength</p>
+<div class="flex items-center text-error">
+<span class="material-symbols-outlined text-lg" style="">cancel</span>
+<span class="text-[10px] ml-1 font-bold" style="">MISSED</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<p class="text-[10px] font-bold text-slate-400 mb-1" style="">THU 15</p>
+<p class="text-sm font-bold text-slate-900 mb-3" style="">Run</p>
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-[10px] ml-1 font-bold" style="">105%</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<p class="text-[10px] font-bold text-slate-400 mb-1" style="">FRI 16</p>
+<p class="text-sm font-bold text-slate-900 mb-3" style="">Swim</p>
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-[10px] ml-1 font-bold" style="">100%</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<p class="text-[10px] font-bold text-slate-400 mb-1" style="">SAT 17</p>
+<p class="text-sm font-bold text-slate-900 mb-3" style="">Long Bike</p>
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-[10px] ml-1 font-bold" style="">100%</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<p class="text-[10px] font-bold text-slate-400 mb-1" style="">SUN 18</p>
+<p class="text-sm font-bold text-slate-900 mb-3" style="">Long Run</p>
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-[10px] ml-1 font-bold" style="">100%</span>
+</div>
+</div>
+<!-- Next 7 Days (Planned) -->
+<div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-200">
+<p class="text-[10px] font-bold text-slate-500 mb-1 uppercase" style="">Today</p>
+<p class="text-sm font-bold text-slate-900 mb-2" style="">Rest Day</p>
+<span class="text-[10px] text-slate-400 font-medium" style="">Recovery focus</span>
+</div>
+<div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-200">
+<p class="text-[10px] font-bold text-slate-400 mb-1 uppercase" style="">Tue 20</p>
+<p class="text-sm font-bold text-slate-900 mb-2" style="">Swim</p>
+<span class="text-[10px] text-slate-400 font-medium" style="">2500m Intervals</span>
+</div>
+<div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-200">
+<p class="text-[10px] font-bold text-slate-400 mb-1 uppercase" style="">Wed 21</p>
+<p class="text-sm font-bold text-slate-900 mb-2" style="">Bike</p>
+<span class="text-[10px] text-slate-400 font-medium" style="">1.5h Tempo</span>
+</div>
+<div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-200">
+<p class="text-[10px] font-bold text-slate-400 mb-1 uppercase" style="">Thu 22</p>
+<p class="text-sm font-bold text-slate-900 mb-2" style="">Strength</p>
+<span class="text-[10px] text-slate-400 font-medium" style="">Core/Mobility</span>
+</div>
+<div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-200">
+<p class="text-[10px] font-bold text-slate-400 mb-1 uppercase" style="">Fri 23</p>
+<p class="text-sm font-bold text-slate-900 mb-2" style="">Run</p>
+<span class="text-[10px] text-slate-400 font-medium" style="">1h Z2 Heart Rate</span>
+</div>
+<div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-200">
+<p class="text-[10px] font-bold text-slate-400 mb-1 uppercase" style="">Sat 24</p>
+<p class="text-sm font-bold text-slate-900 mb-2" style="">Long Bike</p>
+<span class="text-[10px] text-slate-400 font-medium" style="">4h Base Ride</span>
+</div>
+<div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-200">
+<p class="text-[10px] font-bold text-slate-400 mb-1 uppercase" style="">Sun 25</p>
+<p class="text-sm font-bold text-slate-900 mb-2" style="">Long Run</p>
+<span class="text-[10px] text-slate-400 font-medium" style="">2h Endurance Run</span>
+</div>
+</div>
+</section>
+<!-- Bottom Row: Analysis & Feed -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-16">
+<!-- Oracle Analysis Card -->
+<div class="bg-slate-900 rounded-2xl p-8 text-slate-100 shadow-2xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] rounded-full -mr-20 -mt-20"></div>
+<div class="relative z-10 flex flex-col h-full">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary-fixed" style="">auto_awesome</span>
+<h3 class="font-bold text-lg" style="">AI Analysis</h3>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed mb-8" style="">
+                            Based on your last 3 bike sessions, your aerobic efficiency has increased by <span class="text-white font-bold" style="">4.2%</span>. Heart rate drift during Zone 2 efforts is significantly lower. We recommend increasing your FTP target by 5w for the next block.
+                        </p>
+<div class="mt-auto flex gap-4">
+<div class="bg-slate-800/50 p-4 rounded-xl border border-white/5 flex-1">
+<p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1" style="">Efficiency Factor</p>
+<p class="text-xl font-bold" style="">1.84 <span class="text-xs text-primary-fixed" style="">↑</span></p>
+</div>
+<div class="bg-slate-800/50 p-4 rounded-xl border border-white/5 flex-1">
+<p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1" style="">Aerobic Decoupling</p>
+<p class="text-xl font-bold" style="">2.1% <span class="text-xs text-primary-fixed" style="">↓</span></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Pulse Feed Card -->
+<div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-bold text-lg text-slate-900" style="">Pulse Feed</h3>
+<button class="text-xs font-bold text-primary uppercase tracking-widest" style="">View All</button>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">pool</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between">
+<p class="text-sm font-bold text-slate-900" style="">Morning Threshold Swim</p>
+<span class="text-[10px] text-slate-400 font-bold" style="">4h ago</span>
+</div>
+<p class="text-xs text-slate-500" style="">2.4km • 52:10 • 1:35/100m pace</p>
+</div>
+</div>
+<div class="h-px bg-slate-100"></div>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">directions_bike</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between">
+<p class="text-sm font-bold text-slate-900" style="">Sweet Spot Progression</p>
+<span class="text-[10px] text-slate-400 font-bold" style="">Yesterday</span>
+</div>
+<p class="text-xs text-slate-500" style="">1h 15m • 38.2km • 224 NP</p>
+</div>
+</div>
+<div class="h-px bg-slate-100"></div>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">fitness_center</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between">
+<p class="text-sm font-bold text-slate-900" style="">Leg Strength (Isometric Focus)</p>
+<span class="text-[10px] text-slate-400 font-bold" style="">2 days ago</span>
+</div>
+<p class="text-xs text-slate-500" style="">45m • 12 sets • 4200kg total volume</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- AI Coach Overlay -->
+<div class="fixed bottom-6 right-6 z-[60] flex flex-col items-end gap-4 w-80">
+<!-- Message bubble -->
+<div class="bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 flex flex-col gap-4 transform transition-all hover:scale-[1.02]">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">bolt</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-900" style="">Coach AI</p>
+<p class="text-[10px] text-slate-400" style="">System Analysis</p>
+</div>
+</div>
+<p class="text-xs leading-relaxed text-slate-600" style="">
+                Your Training Stress Balance (TSB) is currently <span class="text-primary font-bold" style="">+12</span>. This indicates high freshness. For tomorrow's intervals, you have capacity to push harder.
+            </p>
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full bg-primary text-white py-2.5 rounded-lg text-[10px] font-bold uppercase tracking-widest shadow-lg shadow-primary/20" style="">
+                    Intensify Workout
+                </button>
+<button class="w-full bg-slate-100 text-slate-600 py-2.5 rounded-lg text-[10px] font-bold uppercase tracking-widest hover:bg-slate-200 transition-colors" style="">
+                    Stay on Plan
+                </button>
+</div>
+</div>
+<!-- Launcher -->
+<button class="w-14 h-14 bg-slate-900 rounded-full shadow-xl flex items-center justify-center text-white hover:bg-slate-800 transition-all" style="">
+<span class="material-symbols-outlined text-2xl" style="">chat_bubble</span>
+</button>
+</div>
+</body></html>

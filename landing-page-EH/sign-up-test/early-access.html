@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Get Early Access | EnduroAI</title>
+  <meta name="description" content="Sign up for early access to EnduroAI — AI-powered endurance coaching.">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-high": "#e1e9ee",
+            "surface-container": "#e8eff3",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f0f4f7",
+            "on-surface-variant": "#566166",
+            "on-background": "#2a3439",
+            "on-surface": "#2a3439",
+            "on-primary": "#f6f7ff",
+            "outline-variant": "#a9b4b9",
+            "outline": "#717c82",
+            "background": "#f7f9fb",
+            "surface": "#f7f9fb",
+            "primary": "#545f73",
+            "primary-dim": "#485367",
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Plus Jakarta Sans"],
+            "label": ["Plus Jakarta Sans"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col">
+
+  <!-- Nav -->
+  <header class="glass-nav fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-extrabold tracking-tighter text-on-background">EnduroAI</a>
+      <a href="index.html" class="text-sm text-on-surface-variant hover:text-on-background transition-colors flex items-center gap-1">
+        <span class="material-symbols-outlined text-lg">arrow_back</span>
+        Back
+      </a>
+    </div>
+  </header>
+
+  <!-- Form -->
+  <main class="flex-1 flex items-center justify-center pt-16">
+    <div class="w-full max-w-lg mx-auto px-6 py-16">
+      <div class="text-center space-y-3 mb-10">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-surface-container-high rounded-[9999px]">
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+          <span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Limited spots</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-on-background">
+          Get Early Access
+        </h1>
+        <p class="text-base text-on-surface-variant leading-relaxed max-w-md mx-auto">
+          Be among the first to train with EnduroAI. Help us build the perfect coaching experience for you.
+        </p>
+      </div>
+
+      <form id="icp-form" class="space-y-6" novalidate>
+        <!-- Email (required) -->
+        <div class="space-y-2">
+          <label for="email" class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
+            Email <span class="text-error">*</span>
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            autocomplete="email"
+            placeholder="you@example.com"
+            class="w-full bg-surface-container-lowest border-none rounded-lg px-4 py-3 text-sm text-on-background placeholder-outline-variant focus:ring-1 focus:ring-primary card-shadow"
+          >
+        </div>
+
+        <!-- Sport (radio) -->
+        <div class="space-y-3">
+          <label class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Sport</label>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            <label class="flex items-center gap-2 px-4 py-3 bg-surface-container-lowest rounded-lg cursor-pointer card-shadow hover:bg-surface-container-low transition-colors has-[:checked]:ring-1 has-[:checked]:ring-primary">
+              <input type="radio" name="sport" value="running" class="text-primary focus:ring-primary">
+              <span class="text-sm text-on-background">Running</span>
+            </label>
+            <label class="flex items-center gap-2 px-4 py-3 bg-surface-container-lowest rounded-lg cursor-pointer card-shadow hover:bg-surface-container-low transition-colors has-[:checked]:ring-1 has-[:checked]:ring-primary">
+              <input type="radio" name="sport" value="cycling" class="text-primary focus:ring-primary">
+              <span class="text-sm text-on-background">Cycling</span>
+            </label>
+            <label class="flex items-center gap-2 px-4 py-3 bg-surface-container-lowest rounded-lg cursor-pointer card-shadow hover:bg-surface-container-low transition-colors has-[:checked]:ring-1 has-[:checked]:ring-primary">
+              <input type="radio" name="sport" value="triathlon" class="text-primary focus:ring-primary">
+              <span class="text-sm text-on-background">Triathlon</span>
+            </label>
+            <label class="flex items-center gap-2 px-4 py-3 bg-surface-container-lowest rounded-lg cursor-pointer card-shadow hover:bg-surface-container-low transition-colors has-[:checked]:ring-1 has-[:checked]:ring-primary">
+              <input type="radio" name="sport" value="swimming" class="text-primary focus:ring-primary">
+              <span class="text-sm text-on-background">Swimming</span>
+            </label>
+            <label class="flex items-center gap-2 px-4 py-3 bg-surface-container-lowest rounded-lg cursor-pointer card-shadow hover:bg-surface-container-low transition-colors has-[:checked]:ring-1 has-[:checked]:ring-primary">
+              <input type="radio" name="sport" value="ultrarunning" class="text-primary focus:ring-primary">
+              <span class="text-sm text-on-background">Ultra</span>
+            </label>
+            <label class="flex items-center gap-2 px-4 py-3 bg-surface-container-lowest rounded-lg cursor-pointer card-shadow hover:bg-surface-container-low transition-colors has-[:checked]:ring-1 has-[:checked]:ring-primary">
+              <input type="radio" name="sport" value="other" class="text-primary focus:ring-primary">
+              <span class="text-sm text-on-background">Other</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Races -->
+        <div class="space-y-2">
+          <label for="races" class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
+            Races you're training for
+          </label>
+          <input
+            id="races"
+            name="races"
+            type="text"
+            placeholder="e.g. Boston Marathon 2026, IMAZ 70.3"
+            class="w-full bg-surface-container-lowest border-none rounded-lg px-4 py-3 text-sm text-on-background placeholder-outline-variant focus:ring-1 focus:ring-primary card-shadow"
+          >
+        </div>
+
+        <!-- What are you looking for -->
+        <div class="space-y-2">
+          <label for="looking-for" class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
+            What are you looking for in a training tool that you're not currently getting?
+          </label>
+          <textarea
+            id="looking-for"
+            name="looking_for"
+            rows="4"
+            placeholder="Tell us what's missing from your current setup..."
+            class="w-full bg-surface-container-lowest border-none rounded-lg px-4 py-3 text-sm text-on-background placeholder-outline-variant focus:ring-1 focus:ring-primary card-shadow resize-y"
+          ></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button
+          id="submit-btn"
+          type="submit"
+          class="w-full gradient-primary text-on-primary font-semibold text-sm py-4 rounded-[0.375rem] transition-all hover:shadow-lg hover:shadow-primary/20"
+        >
+          Sign Up for Early Access
+        </button>
+        <p class="text-center text-xs text-on-surface-variant">Only email is required. We'll never share your information.</p>
+      </form>
+
+      <!-- Success state (hidden by default) -->
+      <div id="success-state" class="hidden text-center space-y-4 py-12">
+        <div class="h-16 w-16 rounded-full bg-surface-container mx-auto flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        </div>
+        <h2 class="text-2xl font-extrabold text-on-background">You're in!</h2>
+        <p class="text-sm text-on-surface-variant max-w-sm mx-auto">We'll notify you as soon as EnduroAI is ready. Get ready to train smarter.</p>
+        <a href="index.html" class="inline-flex text-primary font-semibold text-sm hover:underline">Back to home</a>
+      </div>
+    </div>
+  </main>
+
+  <script type="module">
+    import { validateEmail } from '../js/main.js';
+
+    const form = document.getElementById('icp-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const successState = document.getElementById('success-state');
+    let isSubmitting = false;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (isSubmitting) return;
+
+      const email = form.email.value.trim();
+      if (!validateEmail(email)) {
+        form.email.focus();
+        form.email.classList.add('ring-1', 'ring-red-400');
+        return;
+      }
+      form.email.classList.remove('ring-1', 'ring-red-400');
+
+      isSubmitting = true;
+      submitBtn.textContent = 'Submitting...';
+      submitBtn.disabled = true;
+
+      const data = {
+        email,
+        sport: form.sport?.value || '',
+        races: form.races.value.trim(),
+        looking_for: form.looking_for.value.trim(),
+      };
+
+      try {
+        await fetch('https://formspree.io/f/placeholder', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+      } catch {
+        // Still show success
+      }
+
+      form.classList.add('hidden');
+      successState.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, #545f73, #485367);
+}
+
+.gradient-primary:hover {
+  background: linear-gradient(135deg, #485367, #3d4860);
+}
+
+.glass-nav {
+  background: rgba(247, 249, 251, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.hero-glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(84, 95, 115, 0.08);
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.mockup-shadow {
+  box-shadow: 0 20px 60px rgba(42, 52, 57, 0.08), 0 8px 24px rgba(42, 52, 57, 0.04);
+}
+
+.card-shadow {
+  box-shadow: 0 20px 40px rgba(42, 52, 57, 0.04);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out both;
+}
+
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }

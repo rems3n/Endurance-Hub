@@ -1,0 +1,17 @@
+{
+  "name": "enduroai-landing",
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "npx playwright test",
+    "test:e2e:ui": "npx playwright test --ui",
+    "serve": "npx serve . -l 3737"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.1",
+    "jsdom": "^26.1.0",
+    "@playwright/test": "^1.52.0",
+    "serve": "^14.2.4"
+  }
+}
