@@ -67,8 +67,8 @@ if (form) {
     submitBtn.disabled = true;
 
     try {
-      // Formspree endpoint - replace with your form ID
-      const response = await fetch('https://formspree.io/f/placeholder', {
+      const endpoint = form.dataset.formspree || 'https://formspree.io/f/mbdpdlzd';
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -84,7 +84,7 @@ if (form) {
       showMessage('Something went wrong. Please try again.', true);
     } finally {
       isSubmitting = false;
-      submitBtn.textContent = 'Join Waitlist';
+      submitBtn.textContent = 'Subscribe';
       submitBtn.disabled = false;
     }
   });

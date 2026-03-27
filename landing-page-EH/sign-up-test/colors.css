@@ -1,0 +1,34 @@
+.gradient-primary {
+  background: linear-gradient(135deg, #3b63e0, #2d4fba) !important;
+}
+
+.gradient-primary:hover {
+  background: linear-gradient(135deg, #2d4fba, #2444a8) !important;
+}
+
+.hero-glow {
+  background: rgba(59, 99, 224, 0.1);
+}
+
+.gradient-hero {
+  background: linear-gradient(180deg, #f0f4ff 0%, #f7f9fb 100%);
+}
+
+.gradient-value {
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
+}
+
+.feature-icon-plans {
+  background: linear-gradient(135deg, #eef2ff, #dbe5ff);
+  color: #3b63e0;
+}
+
+.feature-icon-workouts {
+  background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+  color: #059669;
+}
+
+.feature-icon-coaching {
+  background: linear-gradient(135deg, #fef3f2, #fde8e7);
+  color: #dc4a3f;
+}
